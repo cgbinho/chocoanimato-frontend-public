@@ -1,5 +1,8 @@
-import { IStepDTO } from '../../../types/multistep';
+import { FiFilm, FiClock } from 'react-icons/fi';
+import { BsPhoneLandscape, BsPhone } from 'react-icons/bs';
+
 import { Container } from './styles';
+import { IStepDTO } from '../../../types/multistep';
 
 interface IProps {
   steps: IStepDTO[];

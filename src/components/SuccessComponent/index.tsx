@@ -1,6 +1,6 @@
 import React from 'react';
-import { BsCheckCircle } from 'react-icons/bs';
 import { Container } from './styles';
+import { BsCheckCircle } from 'react-icons/bs';
 
 interface IProps {
   message: string;

@@ -1,18 +1,25 @@
-import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import { FaPhotoVideo } from 'react-icons/fa';
-import { HiOutlineShoppingCart } from 'react-icons/hi';
-import { useMutation, useQueryCache } from 'react-query';
-import { toast } from 'react-toastify';
-import { useCheckout } from '../../../hooks/checkout';
-import { deleteProject } from '../../../hooks/projects';
-import { ButtonWithIcon } from '../../Form/Button/styles';
-import ModalDeleteProject from '../../ModalDeleteProject';
-import Price from '../../Order/Price';
-import { ImageContainer } from '../../Template/Card/styles';
+
+import { AiOutlineDelete } from 'react-icons/ai';
+
+import Button from '../../Form/Button';
+
 import Tags from '../../Template/Tags';
 import Title from '../../Template/Title';
-import { Container, EditContainer, InfoContainer } from './styles';
+import Price from '../../Order/Price';
+
+import { ButtonWithIcon } from '../../Form/Button/styles';
+import { ImageContainer, InfoContainer } from '../../Template/Card/styles';
+import { useCheckout } from '../../../hooks/checkout';
+import { deleteProject } from '../../../hooks/projects';
+import { useRouter } from 'next/router';
+import ModalDeleteProject from '../../ModalDeleteProject';
+import { useMutation, useQueryCache } from 'react-query';
+
+import { toast } from 'react-toastify';
+import { Container, EditContainer } from './styles';
+import { FaPhotoVideo } from 'react-icons/fa';
+import { HiOutlineShoppingCart } from 'react-icons/hi';
 
 interface IProps {
   id: string;

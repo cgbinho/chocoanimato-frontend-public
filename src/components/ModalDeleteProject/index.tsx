@@ -1,7 +1,8 @@
-import React from 'react';
-import { AiOutlineCloseCircle, AiOutlineDelete } from 'react-icons/ai';
+import Layout from '../../components/Layout';
+import React, { useState } from 'react';
+import { StyledModal, Container, Content, ButtonsContainer } from './styles';
 import Button from '../Form/Button';
-import { ButtonsContainer, Container, Content, StyledModal } from './styles';
+import { AiOutlineCloseCircle, AiOutlineDelete } from 'react-icons/ai';
 interface IModalProps {
   isOpen: boolean;
   setOpen: Function;

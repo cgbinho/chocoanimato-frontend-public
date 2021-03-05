@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
 import { FiEdit } from 'react-icons/fi';
 import { UserDataContainer } from '../../../styles/pages/checkout.confirm.styles';
 

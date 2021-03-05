@@ -1,3 +1,6 @@
+import { FiFilm, FiClock } from 'react-icons/fi';
+import { BsPhoneLandscape, BsPhone } from 'react-icons/bs';
+
 interface IProps {
   width: string;
   height: string;

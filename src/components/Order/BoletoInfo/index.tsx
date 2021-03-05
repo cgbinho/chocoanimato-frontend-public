@@ -1,11 +1,14 @@
-import Link from 'next/link';
-import React from 'react';
-import { FiCopy, FiDownload } from 'react-icons/fi';
-import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
-import useClipboard from 'react-use-clipboard';
-import { OrderData } from '../../../types/checkout';
+import { FiDownload, FiCopy } from 'react-icons/fi';
+
 import Button from '../../Form/Button';
-import { BarcodeContainer, Container, Content } from './styles';
+
+import { Container, Content, BarcodeContainer } from './styles';
+import React from 'react';
+import Link from 'next/link';
+
+import { OrderData } from '../../../types/checkout';
+import useClipboard from 'react-use-clipboard';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 interface IProps {
   order: OrderData;

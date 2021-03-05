@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { shade, cssVar } from 'polished';
 import { IMultiStepDTO, IStepItemDTO } from '../../../types/multistep';
 
 export const StepItemContainer = styled.div<IStepItemDTO>`

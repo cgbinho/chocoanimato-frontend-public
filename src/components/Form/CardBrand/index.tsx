@@ -1,8 +1,9 @@
-import React from 'react';
-import { BiCreditCard } from 'react-icons/bi';
-import { FaCcDiscover } from 'react-icons/fa';
-import { SiAmericanexpress, SiMastercard, SiVisa } from 'react-icons/si';
+import React, { InputHTMLAttributes } from 'react';
 import { Container } from './styles';
+import { UseFormMethods, SubmitHandler, useForm } from 'react-hook-form';
+import { SiVisa, SiMastercard, SiAmericanexpress } from 'react-icons/si';
+import { FaCcDinersClub, FaCcDiscover } from 'react-icons/fa';
+import { BiCreditCard } from 'react-icons/bi';
 
 const CardBand = ({ cardBrand }) => {
   const size = 40;

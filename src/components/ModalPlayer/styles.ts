@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components';
-import Modal from 'styled-react-modal';
+import styled, { css, keyframes } from 'styled-components';
 import { Shadow } from '../../styles/partials';
+import Modal from 'styled-react-modal';
 
 const fadeIn = keyframes`
   0% {

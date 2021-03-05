@@ -1,3 +1,7 @@
+// protected.tsx
+import { withAuth } from '../components/WithAuth';
+import { withAuthServerSideProps } from '../hoc/withAuthServerSide';
+
 interface User {
   id: string;
   name: string;

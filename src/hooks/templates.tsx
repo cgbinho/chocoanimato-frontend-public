@@ -1,5 +1,6 @@
-import { usePaginatedQuery } from 'react-query';
+import { usePaginatedQuery, useQuery } from 'react-query';
 import axios from '../services/api';
+import appConfig from '../config/app';
 
 interface ITemplateQuery {
   category: string;

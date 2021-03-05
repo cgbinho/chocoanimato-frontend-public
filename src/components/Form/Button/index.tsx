@@ -1,5 +1,6 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import { Container, SpinnerContainer } from './styles';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 // type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 type IButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { shade, cssVar } from 'polished';
+
 import { IStepDTO } from '../../../types/multistep';
 
 interface IProps {

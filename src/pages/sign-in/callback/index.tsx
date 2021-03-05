@@ -1,17 +1,26 @@
-import { GetServerSideProps } from 'next';
 import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
-import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
-import Button from '../../../components/Form/Button';
+
+import { GetServerSideProps } from 'next';
+
+import React, { useEffect } from 'react';
+
 import Layout from '../../../components/Layout';
+
+import Input from '../../../components/Form/Input';
+import Button from '../../../components/Form/Button';
+
+import { Container } from '../../../styles/pages/signincallback.styles';
+
+import { useState } from 'react';
+
 import { useAuth } from '../../../hooks/auth';
+import { ISignInCallbackProps } from '../../../types';
 import {
   redirectLoggedUser,
   redirectUserWithInvalidQuery
 } from '../../../services/redirects';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { IconContainer } from '../../../styles/pages/checkout.styles';
-import { Container } from '../../../styles/pages/signincallback.styles';
-import { ISignInCallbackProps } from '../../../types';
 
 const SignInCallback = ({ user, token, provider }: ISignInCallbackProps) => {
   const { signInCallback } = useAuth();

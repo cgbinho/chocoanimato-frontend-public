@@ -1,12 +1,17 @@
+import React, { createContext, useCallback, useState, useContext } from 'react';
+import { QueryResult, useMutation, useQuery } from 'react-query';
+import axios from '../services/api';
 import cookie from 'js-cookie';
-import pagarme from 'pagarme';
-import React, { createContext, useCallback, useContext, useState } from 'react';
+import Router from 'next/router';
+import produce, { Draft } from 'immer';
 import { useImmer } from 'use-immer';
-import checkoutConfig from '../config/checkout';
-import { BrazillianStates } from '../constants/checkout';
+import { setDate } from 'date-fns';
 import { formatMonthAndYear } from '../services/formatTime';
-import { CheckoutItem, CheckoutState, CouponData } from '../types/checkout';
 import { cepSanitization } from '../validations/inputSanitization';
+import { BrazillianStates } from '../constants/checkout';
+import { CheckoutItem, CheckoutState, CouponData } from '../types/checkout';
+import checkoutConfig from '../config/checkout';
+import pagarme from 'pagarme';
 
 interface CheckoutContextData {
   checkout: CheckoutState;

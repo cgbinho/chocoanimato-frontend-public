@@ -1,5 +1,5 @@
+import { Container, PriceContainer } from './styles';
 import { formatPrice } from '../../../services/formatPrice';
-import { PriceContainer } from './styles';
 
 interface IPriceProps {
   justify: string; // 'center', 'end'

@@ -1,5 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { shade, cssVar } from 'polished';
+
 import { Stroke } from '../../../../styles/partials';
+import { ButtonWithIcon } from '../../../Form/Button/styles';
 
 const getColor = props => {
   if (props.isDragAccept) {

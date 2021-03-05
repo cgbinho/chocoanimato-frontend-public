@@ -1,8 +1,16 @@
-import React from 'react';
-import { useFormContext } from 'react-hook-form';
-import { BiText } from 'react-icons/bi';
-import Tooltip from '../../../Tooltip';
+import { InputHTMLAttributes } from 'react';
 import { Container, Content, InputContainer } from './styles';
+import { IconBaseProps } from 'react-icons';
+import {
+  UseFormMethods,
+  SubmitHandler,
+  useForm,
+  useFormContext
+} from 'react-hook-form';
+import Tooltip from '../../../Tooltip';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+import React from 'react';
+import { BiText } from 'react-icons/bi';
 
 const TextField = ({ field, handleChangeField }) => {
   const {

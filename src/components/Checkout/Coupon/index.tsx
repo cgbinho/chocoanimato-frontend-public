@@ -1,6 +1,6 @@
-import React from 'react';
-import { BiCheckCircle, BiPurchaseTag } from 'react-icons/bi';
-import { IoIosClose } from 'react-icons/io';
+import React, { useEffect, useState } from 'react';
+import { BiPurchaseTag, BiCheckCircle } from 'react-icons/bi';
+import { IoIosClose, IoIosSearch } from 'react-icons/io';
 import { IconContainer } from '../../../styles/pages/checkout.styles';
 import { SpinnerContainer } from '../../Form/Button/styles';
 import Input from '../../Form/Input';

@@ -1,7 +1,12 @@
-import React, { Fragment } from 'react';
-import { IoIosArrowForward } from 'react-icons/io';
-import { IMultiStepDTO, IStepItemDTO } from '../../../types/multistep';
 import { MultiStepContainer, StepItemContainer } from './styles';
+import { IoIosArrowForward } from 'react-icons/io';
+
+import {
+  IMultiStepDTO,
+  IStepItemDTO,
+  IStepDTO
+} from '../../../types/multistep';
+import React, { Fragment } from 'react';
 
 const Separator = ({ steps, step }) => {
   if (step.id === 1) {

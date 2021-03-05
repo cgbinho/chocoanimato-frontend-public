@@ -1,10 +1,12 @@
-import Link from 'next/link';
-import React, { useRef, useState } from 'react';
-import { FiUserCheck } from 'react-icons/fi';
-import { useAuth } from '../../../hooks/auth';
-import { useOnClickOutside } from '../../../hooks/utils/clickoutside';
+import React, { useState, useRef } from 'react';
+
 import Hamburger from '../Hamburguer';
-import { StyledButton, StyledLink, StyledMenu } from './styles';
+import { StyledMenu, StyledLink, StyledButton } from './styles';
+
+import { useOnClickOutside } from '../../../hooks/utils/clickoutside';
+import Link from 'next/link';
+import { useAuth } from '../../../hooks/auth';
+import { FiUserCheck } from 'react-icons/fi';
 
 const MobileMenu = () => {
   const { user, signOut } = useAuth();

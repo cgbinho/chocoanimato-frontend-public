@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { StyledModal, Container, Content, VideoContainer } from './styles';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+
 import Plyr from 'react-plyr';
-import { Container, Content, StyledModal, VideoContainer } from './styles';
 
 interface IModalProps {
   isOpen: boolean;

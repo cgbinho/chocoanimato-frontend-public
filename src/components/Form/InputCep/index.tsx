@@ -1,11 +1,15 @@
-import React from 'react';
-import { AiOutlineNumber } from 'react-icons/ai';
-import { BiCheckCircle } from 'react-icons/bi';
-import { IoIosClose } from 'react-icons/io';
-import { FieldGroupContainer } from '../../../styles/pages/checkout.styles';
+import { error } from 'console';
+import React, { useEffect, useState } from 'react';
+import { AiOutlineLoading3Quarters, AiOutlineNumber } from 'react-icons/ai';
+import { BiPurchaseTag, BiCheckCircle } from 'react-icons/bi';
+import { IoIosClose, IoIosSearch } from 'react-icons/io';
 import { SpinnerContainer } from '../../Form/Button/styles';
 import Input from '../../Form/Input';
 import { Container } from './styles';
+import {
+  FieldGroupContainer,
+  IconContainer
+} from '../../../styles/pages/checkout.styles';
 
 export type ContainerProps = {
   cepCode: string;

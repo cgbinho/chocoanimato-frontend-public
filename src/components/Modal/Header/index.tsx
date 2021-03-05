@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
+
+import { Container, Content, BackIconContainer } from './styles';
+
 import { IoIosArrowBack } from 'react-icons/io';
-import { BackIconContainer, Container } from './styles';
 
 interface IModalHeader {
   title: string;

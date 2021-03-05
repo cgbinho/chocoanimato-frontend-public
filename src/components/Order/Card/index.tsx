@@ -1,19 +1,23 @@
+import Button from '../../../components/Form/Button';
+
+import MultiStep from '../../../components/Form/Multistep';
+
+import TemplateTags from '../../../components/Template/Tags';
+import OrderTitle from '../../../components/Order/Title';
+import OrderInfo from '../../../components/Order/Info';
+import OrderDetails from '../../../components/Order/Details';
+import Totals from '../../../components/Order/Totals';
+
+import { OrderCardContainer, OrderItemContainer } from './styles';
+
+import ErrorComponent from '../../../components/ErrorComponent';
+import { formatOrderStepStatus } from '../../../services/formatOrderStepStatus';
 import React from 'react';
 import { FaRegFileVideo } from 'react-icons/fa';
-import { useMutation } from 'react-query';
-import ErrorComponent from '../../../components/ErrorComponent';
-import Button from '../../../components/Form/Button';
-import MultiStep from '../../../components/Form/Multistep';
-import OrderDetails from '../../../components/Order/Details';
-import OrderInfo from '../../../components/Order/Info';
-import OrderTitle from '../../../components/Order/Title';
-import Totals from '../../../components/Order/Totals';
-import TemplateTags from '../../../components/Template/Tags';
-import { OrderSteps as steps } from '../../../constants/orders';
 import { fetchDownload } from '../../../hooks/download';
-import { formatOrderStepStatus } from '../../../services/formatOrderStepStatus';
+import { useMutation } from 'react-query';
+import { OrderSteps as steps } from '../../../constants/orders';
 import { IsOrderExpired } from '../../../services/formatTime';
-import { OrderCardContainer, OrderItemContainer } from './styles';
 
 const OrderCard = ({ order }) => {
   // this is the current order status step:

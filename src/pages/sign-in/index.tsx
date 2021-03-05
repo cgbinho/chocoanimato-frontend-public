@@ -1,21 +1,29 @@
 // import cookie from 'cookie';
-import { yupResolver } from '@hookform/resolvers/yup';
 import { GetServerSideProps } from 'next';
-import { useRouter } from 'next/router';
+
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { FiLock, FiMail } from 'react-icons/fi';
-import { toast } from 'react-toastify';
-import ErrorComponent from '../../components/ErrorComponent';
-import Button from '../../components/Form/Button';
-import GoogleButton from '../../components/Form/GoogleButton';
-import Input from '../../components/Form/Input';
+import { FiMail, FiLock } from 'react-icons/fi';
+
 import Layout from '../../components/Layout';
-import { useAuth } from '../../hooks/auth';
-import { signInSchema } from '../../schemas';
-import { redirectLoggedUser } from '../../services/redirects';
+
+import Input from '../../components/Form/Input';
+import Button from '../../components/Form/Button';
+
 import { Container } from '../../styles/pages/signin.styles';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { signInSchema } from '../../schemas';
+import GoogleButton from '../../components/Form/GoogleButton';
+
+import { toast } from 'react-toastify';
+
+import { useAuth } from '../../hooks/auth';
+import { useRouter } from 'next/router';
+
 import { ISignInProps } from '../../types';
+
+import { redirectLoggedUser } from '../../services/redirects';
+import ErrorComponent from '../../components/ErrorComponent';
 
 const SignIn = () => {
   const { isLoading, isError, signIn, signInGoogle } = useAuth();

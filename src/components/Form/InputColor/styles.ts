@@ -1,5 +1,5 @@
-import { shade } from 'polished';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { shade, cssVar } from 'polished';
 
 interface IContentProps {
   color: string;

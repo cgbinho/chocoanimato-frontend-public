@@ -1,6 +1,7 @@
-import { BsPhone, BsPhoneLandscape } from 'react-icons/bs';
-import { FiClock, FiFilm } from 'react-icons/fi';
-import { TagContainer, TagsContainer } from './styles';
+import { FiFilm, FiClock } from 'react-icons/fi';
+import { BsPhoneLandscape, BsPhone } from 'react-icons/bs';
+
+import { TagsContainer, TagContainer } from './styles';
 
 const Tag = ({ icon: Icon, value }) => {
   return (

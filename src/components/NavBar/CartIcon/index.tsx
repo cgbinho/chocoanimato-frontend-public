@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { HiOutlineShoppingCart } from 'react-icons/hi';
 import { useCheckout } from '../../../hooks/checkout';
+
 import { Container } from './styles';
 
 type ICartIconProps = {

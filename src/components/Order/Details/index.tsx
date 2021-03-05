@@ -1,5 +1,10 @@
 import { BiBarcode } from 'react-icons/bi';
+import { FiCalendar, FiFlag } from 'react-icons/fi';
+
+import { formatCreateDate } from '../../../services/formatTime';
+
 import OrderBoletoInfo from '../../Order/BoletoInfo';
+
 import { Container } from './styles';
 
 const OrderDetails = ({ order }) => {

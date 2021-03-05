@@ -1,6 +1,7 @@
+import { Container } from './styles';
+
 import Toggle from 'react-toggle';
 import Tooltip from '../../../Tooltip';
-import { Container } from './styles';
 
 const Switch = ({ field, setAlphaRequired, alphaRequired }) => {
   const value = alphaRequired ? 'yes' : 'no';

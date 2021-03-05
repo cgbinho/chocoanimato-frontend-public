@@ -1,17 +1,21 @@
-import { yupResolver } from '@hookform/resolvers/yup';
 import React from 'react';
-import { useForm } from 'react-hook-form';
-import { BiPencil, BiText } from 'react-icons/bi';
-import { FiMail } from 'react-icons/fi';
-import { useMutation } from 'react-query';
-import ErrorComponent from '../../components/ErrorComponent';
-import Button from '../../components/Form/Button';
-import Input from '../../components/Form/Input';
 import Layout from '../../components/Layout';
-import SuccessComponent from '../../components/SuccessComponent';
-import { postMessage } from '../../queries/contact';
-import { contactSchema } from '../../schemas';
+
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from 'react-hook-form';
+import { FiMail } from 'react-icons/fi';
+import { BiPencil, BiText } from 'react-icons/bi';
+
+import Input from '../../components/Form/Input';
+import Button from '../../components/Form/Button';
+
 import { Container } from '../../styles/pages/contact.styles';
+import { contactSchema } from '../../schemas';
+import { postMessage } from '../../queries/contact';
+import { useMutation } from 'react-query';
+
+import ErrorComponent from '../../components/ErrorComponent';
+import SuccessComponent from '../../components/SuccessComponent';
 
 type IFormInputs = {
   name: string;

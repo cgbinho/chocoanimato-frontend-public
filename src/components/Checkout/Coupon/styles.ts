@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import Input from '../../Form/Input';
+import { Container } from '../../Form/Input/styles';
 
 export const CouponContainer = styled.div`
   display: flex;

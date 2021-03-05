@@ -1,6 +1,11 @@
+import Layout from '../../components/Layout';
 import React, { useState } from 'react';
+import { StyledModal, Container, Content } from './styles';
+import Button from '../Form/Button';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { Container, Content, StyledModal } from './styles';
+// interface IModalTermsProps {
+//   isOpen: boolean;
+// }
 
 const ModalTerms: React.FC = ({ children }) => {
   const [isOpen, setOpen] = useState(false);

@@ -1,4 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+import { Shadow } from '../../styles/partials';
 
 const fadeIn = keyframes`
   0% {

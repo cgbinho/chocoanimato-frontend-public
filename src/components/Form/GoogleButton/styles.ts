@@ -1,5 +1,5 @@
-import { shade } from 'polished';
 import styled from 'styled-components';
+import { shade, cssVar } from 'polished';
 
 export const Container = styled.button`
   display: flex;

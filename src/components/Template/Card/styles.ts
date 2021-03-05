@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade, cssVar } from 'polished';
 
 export const TitleContainer = styled.div`
   padding: 0.5rem 1.5rem 1.5rem;

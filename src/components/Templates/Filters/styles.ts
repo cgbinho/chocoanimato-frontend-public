@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade, cssVar } from 'polished';
 
 export const FiltersContainer = styled.div`
   form {

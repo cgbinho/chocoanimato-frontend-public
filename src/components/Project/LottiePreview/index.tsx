@@ -1,8 +1,9 @@
-import React from 'react';
-import { Lottie } from 'react-lottie-hook';
+import React, { useEffect } from 'react';
+import { useLottie, Lottie } from 'react-lottie-hook';
+
+import { VideoContainer } from './styles';
 import Controls from '../Controls';
 import Progress from '../Progress';
-import { VideoContainer } from './styles';
 
 function LottiePreview({
   project,

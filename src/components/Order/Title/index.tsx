@@ -1,5 +1,8 @@
-import OrderThumbnail from '../Thumbnail';
+import { FiFilm, FiClock } from 'react-icons/fi';
+import { BsPhoneLandscape, BsPhone } from 'react-icons/bs';
+
 import { OrderTitleContainer } from './styles';
+import OrderThumbnail from '../Thumbnail';
 
 const OrderTitle = ({ name, description }) => {
   return (

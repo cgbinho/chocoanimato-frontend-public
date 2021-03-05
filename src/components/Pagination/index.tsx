@@ -1,6 +1,6 @@
 import React from 'react';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import Button from '../Form/Button';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { PaginationContainer } from './styles';
 
 const Pagination = ({

@@ -1,6 +1,21 @@
-import React, { useState } from 'react';
-import { ColorChangeHandler, ColorResult } from 'react-color';
-import { Container } from './styles';
+import React, { InputHTMLAttributes, useState } from 'react';
+import {
+  Container,
+  Content,
+  InputContainer,
+  HiddenInputContainer
+} from './styles';
+
+import { CgColorPicker } from 'react-icons/cg';
+import {
+  UseFormMethods,
+  SubmitHandler,
+  useForm,
+  Controller,
+  useFormContext
+} from 'react-hook-form';
+import Tooltip from '../../Tooltip';
+import { ColorChangeHandler, ColorResult, SketchPicker } from 'react-color';
 
 interface InputColorProps {
   name: string;

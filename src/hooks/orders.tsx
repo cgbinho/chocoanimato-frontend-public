@@ -1,4 +1,4 @@
-import { usePaginatedQuery } from 'react-query';
+import { usePaginatedQuery, useQuery } from 'react-query';
 import axios from '../services/api';
 
 interface IOrderQuery {

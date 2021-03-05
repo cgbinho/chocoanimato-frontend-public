@@ -1,3 +1,4 @@
+import React from 'react';
 import cookie from 'next-cookies';
 import axios from '../services/api';
 

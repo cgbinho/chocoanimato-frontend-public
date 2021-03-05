@@ -1,16 +1,18 @@
-import Link from 'next/link';
 import React, { useState } from 'react';
-import { BiShoppingBag, BiUser } from 'react-icons/bi';
+import Link from 'next/link';
 import { FaCaretDown } from 'react-icons/fa';
-import { FiEdit3, FiLogOut } from 'react-icons/fi';
+import { FiLogOut, FiEdit3 } from 'react-icons/fi';
 import { RiVideoChatLine } from 'react-icons/ri';
-import { useAuth } from '../../../hooks/auth';
+import { BiShoppingBag, BiUser } from 'react-icons/bi';
+
 import {
   DropdownContainer,
-  DropdownItemContainer,
   DropdownMenuContainer,
-  ProfileButton
+  DropdownItemContainer
 } from './styles';
+
+import { ProfileButton } from './styles';
+import { useAuth } from '../../../hooks/auth';
 
 export const ProfileMenu = () => {
   const [hidden, setHidden] = useState(true);

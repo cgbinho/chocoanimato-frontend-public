@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { shade, cssVar } from 'polished';
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 
 export const PaginationContainer = styled.div`
   display: grid;

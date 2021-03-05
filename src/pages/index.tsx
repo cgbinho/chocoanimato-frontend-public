@@ -1,10 +1,13 @@
-import Button from '../components/Form/Button';
+import NavBar from '../components/NavBar';
 import Layout from '../components/Layout';
+import Button from '../components/Form/Button';
+
 import {
-  Background,
   Container,
-  Content
+  Content,
+  Background
 } from '../styles/pages/homepage.styles';
+import { GetServerSideProps } from 'next';
 
 const homepage = () => {
   return (
@@ -12,7 +15,7 @@ const homepage = () => {
       <Layout>
         <Container>
           <Content>
-            <h1>FRONTEND TEST</h1>
+            <h1>Crie vídeos rápidos e automáticos</h1>
             <p>Utilizando padrões personalizados de diversos temas</p>
             <Button primary width="300px">
               Quero criar um vídeo

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ModalProvider } from 'styled-react-modal';
 import { AuthProvider } from './auth';
 import { CheckoutProvider } from './checkout';

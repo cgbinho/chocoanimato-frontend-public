@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { shade, cssVar } from 'polished';
 
 export const ErrorContainer = styled.div`
   display: grid;

@@ -1,19 +1,25 @@
-import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { useMutation } from 'react-query';
-import { toast } from 'react-toastify';
-import { createProject } from '../../../hooks/projects';
-import Button from '../../Form/Button';
-import ModalPlayer from '../../ModalPlayer';
+import { useRouter } from 'next/router';
 import Price from '../../Order/Price';
-import Tags from '../Tags';
-import Title from '../Title';
+
 import {
   Container,
-  ImageContainer,
+  PriceContainer,
   InfoContainer,
+  ImageContainer,
   TitleContainer
 } from './styles';
+
+import Button from '../../Form/Button';
+
+import Tags from '../Tags';
+import Title from '../Title';
+
+import ModalPlayer from '../../ModalPlayer';
+import { useMutation } from 'react-query';
+import { createProject } from '../../../hooks/projects';
+
+import { toast } from 'react-toastify';
 
 interface IProps {
   user: object;

@@ -1,20 +1,24 @@
-import React, { useCallback, useEffect, useState } from 'react';
+// components/FormComponents/FileInput.tsx
+import React, { FC, useCallback, useEffect, useState } from 'react';
 import { DropzoneOptions, useDropzone } from 'react-dropzone';
 import { useFormContext } from 'react-hook-form';
-import { BiImageAdd, BiUpload } from 'react-icons/bi';
-import { MdDelete } from 'react-icons/md';
 import { useProjectAsset } from '../../../../hooks/projects';
-import { ButtonWithIcon, SpinnerContainer } from '../../../Form/Button/styles';
-import Tooltip from '../../../Tooltip';
 import ColorField from '../ColorField';
-import SwitchField from '../SwitchField';
+
 import {
   Container,
   Content,
   DropzoneContainer,
   DropzoneContent,
+  AlphaRequiredContainer,
   RemoveImageContainer
 } from './styles';
+import Tooltip from '../../../Tooltip';
+import { BiImageAdd, BiUpload } from 'react-icons/bi';
+import Button from '../../../Form/Button';
+import SwitchField from '../SwitchField';
+import { ButtonWithIcon, SpinnerContainer } from '../../../Form/Button/styles';
+import { MdDelete } from 'react-icons/md';
 
 const ImageField = props => {
   const { field, handleChangeField, project } = props;

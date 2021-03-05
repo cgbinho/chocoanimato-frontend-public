@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
-import { ColorChangeHandler, ColorResult } from 'react-color';
-import { useFormContext } from 'react-hook-form';
-import { CgColorPicker } from 'react-icons/cg';
-import ModalSketchPicker from '../../../../components/ModalSketchPicker';
-import Tooltip from '../../../Tooltip';
+import React, { InputHTMLAttributes, useRef, useState } from 'react';
 import {
   Container,
   Content,
-  HiddenInputContainer,
-  InputContainer
+  InputContainer,
+  HiddenInputContainer
 } from './styles';
+
+import { CgColorPicker } from 'react-icons/cg';
+import { useFormContext } from 'react-hook-form';
+import Tooltip from '../../../Tooltip';
+
+import { ColorChangeHandler, ColorResult, SketchPicker } from 'react-color';
+import ModalSketchPicker from '../../../../components/ModalSketchPicker';
 
 // 1. defaultValue comes as string '0,62,53,1'
 // 2. We convert it to rgba('0,62,53,1'); for styled components.

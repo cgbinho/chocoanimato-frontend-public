@@ -1,5 +1,6 @@
 import { InputHTMLAttributes } from 'react';
 import { Container, Content } from './styles';
+import { UseFormMethods, SubmitHandler, useForm } from 'react-hook-form';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;

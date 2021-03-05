@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { shade, cssVar } from 'polished';
+import Button from '../../Form/Button';
 
 export const InfoContainer = styled.div`
   padding: 0.5rem 1.5rem 1.5rem;

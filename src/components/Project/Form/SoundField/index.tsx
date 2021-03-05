@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
-import { useFormContext } from 'react-hook-form';
+import { InputHTMLAttributes, useState } from 'react';
+import { Container, Content, InputContainer } from './styles';
+import { IconBaseProps } from 'react-icons';
+import {
+  UseFormMethods,
+  SubmitHandler,
+  useForm,
+  useFormContext
+} from 'react-hook-form';
+import Tooltip from '../../../Tooltip';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+import React from 'react';
+import { BiText } from 'react-icons/bi';
+import { useMusic } from '../../../../hooks/music';
+import ReactPlayer from 'react-player/lazy';
 import Plyr from 'react-plyr';
 import storageConfig from '../../../../config/storage';
-import { useMusic } from '../../../../hooks/music';
-import Tooltip from '../../../Tooltip';
-import { Container, Content } from './styles';
 
 const SoundField = ({ field, handleChangeField, project }) => {
   const {

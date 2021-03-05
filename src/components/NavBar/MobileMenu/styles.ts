@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Shadow } from '../../../styles/partials';
+
 import Button from '../../Form/Button';
 
 export const StyledMenu = styled.nav<{ open: boolean }>`

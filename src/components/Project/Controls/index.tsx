@@ -1,5 +1,6 @@
-import { BsPauseFill, BsPlayFill, BsStopFill } from 'react-icons/bs';
 import { Container } from './styles';
+
+import { BsPlayFill, BsPauseFill, BsStopFill } from 'react-icons/bs';
 
 interface IProps {
   onPlay: any;

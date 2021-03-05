@@ -5,7 +5,7 @@ import appConfig from '../config/app';
 
 const baseURL =
   appConfig.node_env === 'production'
-    ? '/backend'
+    ? `https://www.chocoanimato.com/backend'`
     : `http://localhost:${appConfig.api_port}/backend`;
 
 export default axios.create({ baseURL });

@@ -1,7 +1,9 @@
 import { InputHTMLAttributes } from 'react';
-import { IconBaseProps } from 'react-icons';
-import Tooltip from '../../Tooltip';
 import { Container, Content, InputContainer } from './styles';
+import { IconBaseProps } from 'react-icons';
+import { UseFormMethods, SubmitHandler, useForm } from 'react-hook-form';
+import Tooltip from '../../Tooltip';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;

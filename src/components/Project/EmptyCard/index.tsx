@@ -1,8 +1,10 @@
-import { useRouter } from 'next/router';
-import React from 'react';
-import { BiVideoPlus } from 'react-icons/bi';
-import { ButtonWithIcon } from '../../Form/Button/styles';
+import React, { useState } from 'react';
 import { Container, VideoContainer } from './styles';
+
+import { ButtonWithIcon } from '../../Form/Button/styles';
+
+import { BiVideoPlus } from 'react-icons/bi';
+import { useRouter } from 'next/router';
 
 interface IProps {
   id: string;

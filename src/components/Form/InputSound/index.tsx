@@ -1,5 +1,9 @@
-import Tooltip from '../../Tooltip';
+import { InputHTMLAttributes } from 'react';
 import { Container, Content } from './styles';
+import { CgColorPicker } from 'react-icons/cg';
+import { UseFormMethods, SubmitHandler, useForm } from 'react-hook-form';
+import SelectInput from '../SelectInput';
+import Tooltip from '../../Tooltip';
 
 type ISelectProps = {
   name: string;

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { shade, cssVar } from 'polished';
 
 export const LoadingContainer = styled.div`
   display: grid;

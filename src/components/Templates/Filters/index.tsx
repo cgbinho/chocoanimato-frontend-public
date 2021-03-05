@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import SelectFilter from '../../../components/Form/SelectFilter';
-import { FilterContainer, FiltersContainer } from './styles';
+
+import { FiltersContainer, FilterContainer } from './styles';
 
 type IFormInputs = {
   category: string;

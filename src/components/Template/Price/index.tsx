@@ -1,4 +1,5 @@
 import { formatPrice } from '../../../services/formatPrice';
+
 import { PriceContainer } from './styles';
 
 const Price = ({ price }) => {

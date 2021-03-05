@@ -1,4 +1,4 @@
-import { RefObject, useEffect } from 'react';
+import { useEffect, RefObject } from 'react';
 
 export const useScript = (url: string, ref: RefObject<HTMLDivElement>) => {
   useEffect(() => {

@@ -1,6 +1,7 @@
-import React from 'react';
-import { AiOutlineInfoCircle } from 'react-icons/ai';
+import Layout from '../../components/Layout';
+import React, { useState } from 'react';
 import { Container, TooltipBoxContainer, TooltipTextContainer } from './styles';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
 
 interface ITooltipProps {
   message: string;

@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { shade, cssVar } from 'polished';
 
 export const OrderCardContainer = styled.div`
   display: grid;

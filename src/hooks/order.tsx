@@ -1,4 +1,4 @@
-import { useQuery } from 'react-query';
+import { usePaginatedQuery, useQuery } from 'react-query';
 import axios from '../services/api';
 
 const fetchOrder = async (id: string) => {

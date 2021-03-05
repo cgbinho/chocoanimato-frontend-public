@@ -1,5 +1,5 @@
-import cardValidation from 'card-validator';
 import { useEffect, useState } from 'react';
+import cardValidation from 'card-validator';
 
 const useCardBrand = (cardNumber: string) => {
   const [cardBrand, setCardBrand] = useState({

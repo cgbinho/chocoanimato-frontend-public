@@ -1,5 +1,6 @@
-import { useQuery } from 'react-query';
+import { usePaginatedQuery, useQuery } from 'react-query';
 import axios from '../services/api';
+import appConfig from '../config/app';
 
 interface IDownloadQuery {
   id: string;

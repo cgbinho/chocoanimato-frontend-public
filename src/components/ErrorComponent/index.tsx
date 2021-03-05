@@ -1,6 +1,6 @@
 import React from 'react';
-import { BiError } from 'react-icons/bi';
 import { ErrorContainer } from './styles';
+import { BiError } from 'react-icons/bi';
 
 interface IProps {
   message: string;

@@ -1,9 +1,16 @@
+import React, { useState } from 'react';
 import Link from 'next/link';
-import React from 'react';
+
+import CartIcon from './CartIcon/index';
+
 import { useAuth } from '../../hooks/auth';
+
 import MobileMenu from '../NavBar/MobileMenu';
+
+import { Container, NavContainer, BurguerContainer } from './styles';
+
 import ProfileButton from './ProfileMenu';
-import { BurguerContainer, Container, NavContainer } from './styles';
+import Button from '../Form/Button';
 
 const NavBar = () => {
   const { user } = useAuth();
@@ -22,15 +29,32 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
+          <Link href="/templates">
+            <a>Categorias</a>
+          </Link>
+        </li>
+        <li>
           <Link href="/contact">
             <a>Contato</a>
           </Link>
+        </li>
+        <li>
+          <CartIcon size="24px" />
         </li>
         {!user ? (
           <>
             <li>
               <Link href="/sign-in">
                 <a>Entrar</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sign-up">
+                <a>
+                  <Button primary>
+                    <span>Criar Conta</span>
+                  </Button>
+                </a>
               </Link>
             </li>
           </>
