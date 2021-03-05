@@ -7,7 +7,7 @@ import { Container } from './styles';
 const Layout: React.FC = props => {
   return (
     <Container>
-      {/* <NavBar /> */}
+      <NavBar />
       {props.children}
       <Footer />
     </Container>

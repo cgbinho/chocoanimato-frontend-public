@@ -9,7 +9,7 @@ import { useAuth } from '../../../hooks/auth';
 import { FiUserCheck } from 'react-icons/fi';
 
 const MobileMenu = () => {
-  const { user, signOut } = useAuth();
+  // const { user, signOut } = useAuth();
   const [open, setOpen] = useState<boolean>(false);
   const node = useRef<HTMLDivElement>(null);
   const close = () => setOpen(false);
@@ -49,13 +49,13 @@ const MobileMenu = () => {
         </Link>
         <hr />
         <Link href="/" passHref>
-          <StyledLink
+          {/* <StyledLink
             onClick={() => {
               close(), signOut();
             }}
           >
             Sair
-          </StyledLink>
+          </StyledLink> */}
         </Link>
       </>
     );
@@ -64,7 +64,7 @@ const MobileMenu = () => {
   return (
     <div ref={node}>
       <StyledMenu open={open}>
-        {user && (
+        {/* {user && (
           <>
             <div className="logged_indicator">
               <Link href="/profile">
@@ -76,18 +76,18 @@ const MobileMenu = () => {
             </div>
             <hr />
           </>
-        )}
+        )} */}
         <Link href="/" passHref>
           <StyledLink onClick={() => close()}>Início</StyledLink>
         </Link>
-        {!user && <CredentialsMenu />}
+        {/* {!user && <CredentialsMenu />} */}
         <Link href="/templates" passHref>
           <StyledLink onClick={() => close()}>Categorias</StyledLink>
         </Link>
         <Link href="/contact" passHref>
           <StyledLink onClick={() => close()}>Contato</StyledLink>
         </Link>
-        {user && <LoggedMenu />}
+        {/* {user && <LoggedMenu />} */}
       </StyledMenu>
       <Hamburger open={open} setOpen={setOpen} />
     </div>

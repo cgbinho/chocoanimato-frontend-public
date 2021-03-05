@@ -9,18 +9,18 @@ type ICartIconProps = {
 };
 
 const CartIcon: React.FC<ICartIconProps> = ({ size }: ICartIconProps) => {
-  const { checkout } = useCheckout();
+  // const { checkout } = useCheckout();
 
-  const { items } = checkout;
+  // const { items } = checkout;
 
   // Check if there are items.
-  const hasItems = !!items?.[0];
+  // const hasItems = !!items?.[0];
 
   return (
     <Container>
       <Link href="/checkout">
         <a>
-          {hasItems && <span>{items.length}</span>}
+          {/* {hasItems && <span>{items.length}</span>} */}
           <HiOutlineShoppingCart size={size} />
         </a>
       </Link>

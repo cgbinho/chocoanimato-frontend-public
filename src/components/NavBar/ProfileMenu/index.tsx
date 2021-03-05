@@ -17,7 +17,7 @@ import { useAuth } from '../../../hooks/auth';
 export const ProfileMenu = () => {
   const [hidden, setHidden] = useState(true);
 
-  const { user, signOut } = useAuth();
+  // const { user, signOut } = useAuth();
 
   return (
     <DropdownContainer>
@@ -38,12 +38,12 @@ export const ProfileMenu = () => {
         />
         <DropDownItem label="Pedidos" icon={BiShoppingBag} link="/orders" />
         <hr />
-        <DropDownItem
+        {/* <DropDownItem
           label="Sair"
           icon={FiLogOut}
           link="/"
           onClick={() => signOut}
-        />
+        /> */}
       </DropdownMenuContainer>
     </DropdownContainer>
   );

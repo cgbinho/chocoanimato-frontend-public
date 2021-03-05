@@ -31,33 +31,7 @@ export const NavContainer = styled.ul`
   @media (max-width: 920px) {
     display: none;
   }
-
-  /* .profile {
-    a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 12px;
-      transition: all 0.3s ease 0s;
-
-      &:hover {
-        svg {
-          fill: var(--secondary_dark);
-        }
-      }
-
-      svg {
-        margin-right: 8px;
-        fill: var(--secondary);
-      }
-    }
-  } */
 `;
-
-// export const RegisterButton = styled(Button)`
-//   margin: 0;
-//   padding: 16px 28px;
-// `;
 
 export const BurguerContainer = styled.ul`
   display: grid;

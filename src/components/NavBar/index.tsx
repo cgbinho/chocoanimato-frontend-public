@@ -13,7 +13,7 @@ import ProfileButton from './ProfileMenu';
 import Button from '../Form/Button';
 
 const NavBar = () => {
-  const { user } = useAuth();
+  // const { user } = useAuth();
 
   return (
     <Container>
@@ -41,7 +41,7 @@ const NavBar = () => {
         <li>
           <CartIcon size="24px" />
         </li>
-        {!user ? (
+        {/* {!user ? (
           <>
             <li>
               <Link href="/sign-in">
@@ -62,7 +62,7 @@ const NavBar = () => {
           <li className="profile">
             <ProfileButton />
           </li>
-        )}
+        )} */}
       </NavContainer>
 
       <BurguerContainer>
