@@ -43,7 +43,7 @@ const NavBar = () => {
         <li>
           <CartIcon size="24px" />
         </li>
-        {/* {!user ? (
+        {!user ? (
           <>
             <li>
               <Link href="/sign-in">
@@ -64,7 +64,7 @@ const NavBar = () => {
           <li className="profile">
             <ProfileButton />
           </li>
-        )} */}
+        )}
       </NavContainer>
 
       <BurguerContainer>
