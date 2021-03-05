@@ -13,7 +13,9 @@ import ProfileButton from './ProfileMenu';
 import Button from '../Form/Button';
 
 const NavBar = () => {
-  // const { user } = useAuth();
+  const { user } = useAuth();
+
+  console.log('user?: ', user);
 
   return (
     <Container>

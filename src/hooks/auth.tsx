@@ -1,8 +1,7 @@
 import React, { createContext, useCallback, useState, useContext } from 'react';
-import { QueryResult, useMutation, useQuery } from 'react-query';
+import Router from 'next/router';
 import axios from '../services/api';
 import cookie from 'js-cookie';
-import Router from 'next/router';
 
 import {
   IUserProps,
@@ -11,7 +10,6 @@ import {
   ISignInProps,
   ISignUpCredentials
 } from '../types';
-import { postSignIn } from '../queries/signin';
 
 interface IsMessageData {
   status: boolean;
